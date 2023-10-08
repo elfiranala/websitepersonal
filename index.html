@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>SweetBakery</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Product">Product</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <!-- Tombol untuk membuka modal -->
+                    <button class="open-button" onclick="openModal()">Sign up</button>
+    
+                </ul>
+            </div>
+        </div>
+    </nav>
+        
+        <!-- Modal -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal()">&times;</span>
+                <h2>Sign up</h2>
+                <form class="form-container" action="your_server_endpoint.php" method="POST">
+                    <div class="form-group">
+                        <label for="username">Nama:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Alamat:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Email:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">No.HP:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Kode Pos:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Jenis Kelamin:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Agama:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Sign up">
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="wrapper">
+        <!-- untuk home -->
+        <section id="Home">
+            <img src="logo bakery.jpg" width="600" height="600"/>
+            <div class="kolom">
+                <p class="deskripsi">Home Made Bakery</p>
+                <h2>Daily Fresh And Tasty</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi dolor doloribus voluptatibus velit autem ipsa commodi sit culpa quae rem voluptate reprehenderit soluta nisi nemo veniam, debitis nulla suscipit voluptates ad qui quasi architecto totam? Nobis ad odit aliquam! Voluptates, id amet veritatis eligendi nulla voluptas blanditiis rerum voluptatum sit.</p>
+                <p><a href=""class="tbl-pink">Read More</a></p>
+            </div>
+        </section>
+
+        <!-- untuk About -->
+        <section id="About">
+            <div class="kolom">
+                <p class="deskripsi">About Sweet Bakery</p>
+                <h2>About Sweet Bakery</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam rem aut dolore nulla animi. Reprehenderit cupiditate et est facere aliquid?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nostrum officiis delectus est minus, quibusdam nesciunt fuga dicta quia in?</p>
+                <p><a href="" class="tbl-biru">Read More</a></p>
+            </div>
+            <img src="about.jpg" width="500" height="400"/>
+        </section>
+
+        <!-- untuk Product -->
+        <section id="Product">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Our Top Product</p>
+                    <h2>Product</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, consectetur?</p>
+                </div>
+
+                <div class="Product">
+                    <div class="kartu-Product">
+                        <img src="produk1.jpg" width="400" height="300"/>
+                        <p>Roti isi Sosis</p>
+                    </div>
+                    <div class="kartu-Product">
+                        <img src="rotikering.jpg"width="400" height="300"/>
+                        <p>Roti Kering</p>
+                    </div>
+                    <div class="kartu-Product">
+                        <img src="donat.jpg" width="400" height="300"/>
+                        <p>Donat</p>
+                    </div>
+                    <div class="kartu-Product">
+                        <img src="croissant with grated chocolate.jpg"width="400" height="300"/>
+                        <p>croissant with chocolate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- untuk Gallery -->
+        <section id="Gallery">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Our Top Gallery</p>
+                    <h2>Gallery</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi libero ipsam eaque. Nam voluptas exercitationem mollitia nulla inventore, fugit accusamus.</p>
+                </div>
+
+                <div class="Gallery-list">
+                    <div class="kartu-Gallery">
+                        <img src="gallery.jpg" width="400" height="300"/>
+                    </div>
+                    <div class="kartu-Gallery">
+                        <img src="2.jpg"width="400" height="300"/>
+                    </div>
+                    <div class="kartu-Gallery">
+                        <img src="3.jpg"width="400" height="300"/>
+                    </div>
+                    <div class="kartu-Gallery">
+                        <img src="4.jpg"width="400" height="300"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- untuk Contact-->
+    <div id="Contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>Sweet Bakery</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, nobis.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, nobis.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>contact</h3>
+                    <p>Jalan Raya Paesan Kedungwuni pekalongan</p>
+                    <p>kode pos:51173</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Sosial</h3>
+                    <p><b>Instagram : </b>@sweetbakery</p>
+                    <p><b>WhatsApp : </b>086597227447</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2021 <b>Sweet Bakery</b> All Rights Reserved.
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk membuka modal
+        function openModal() {
+            document.getElementById("loginModal").style.display = "block";
+        }
+
+        // Fungsi untuk menutup modal
+        function closeModal() {
+            document.getElementById("loginModal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
